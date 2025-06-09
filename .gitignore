@@ -41,3 +41,6 @@ temp/
 # MCP specific
 .mcp-cache/
 .cursor/ 
+
+# local test files
+local-test/
