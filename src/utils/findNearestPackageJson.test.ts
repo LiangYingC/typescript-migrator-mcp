@@ -27,7 +27,6 @@ describe("findNearestPackageJson", () => {
   });
 
   it("should throw error when no package.json found", async () => {
-    // 使用一個不太可能有 package.json 的路徑（根目錄）
     await expect(findNearestPackageJson("/")).rejects.toThrow(
       "Could not find package.json in"
     );
