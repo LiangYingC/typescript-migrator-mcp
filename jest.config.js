@@ -5,7 +5,7 @@ const config = {
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
   testMatch: ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
   transform: {
-    "^.+\\.(ts|tsx)$": "ts-jest",
+    "^.+\\.ts$": ["ts-jest", { useESM: true }],
   },
   extensionsToTreatAsEsm: [".ts", ".tsx"],
   moduleNameMapper: {
