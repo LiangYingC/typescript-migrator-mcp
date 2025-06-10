@@ -3,6 +3,7 @@ import getPackageVersions from "../getPackageVersions.js";
 export default async function getCommonPrompt(filePath: string) {
   const versions = await getPackageVersions(filePath);
   const typescriptVersion = versions.typescript;
+  const reactVersion = versions.react;
 
   if (!typescriptVersion) {
     throw new Error("TypeScript version not found in your project.");
@@ -10,7 +11,7 @@ export default async function getCommonPrompt(filePath: string) {
 
   const environmentRules = `
     - TypeScript version: ${typescriptVersion}
-    
+    ${reactVersion ? `- React version: ${reactVersion}` : ""}
   `;
 
   const duringTsFileCreationRules = `
