@@ -1,5 +1,4 @@
 import fs from "fs/promises";
-import path from "path";
 import findNearestPackageJson from "./findNearestPackageJson.js";
 
 export const PACKAGE_NAMES = {
