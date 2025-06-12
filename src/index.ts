@@ -81,7 +81,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 async function main() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error("TypeScript Migrator MCP Server is running");
+  console.log("TypeScript Migrator MCP Server is running");
 }
 
 main().catch((error) => {
