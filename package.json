@@ -23,7 +23,7 @@
     "migration"
   ],
   "author": "LiangC",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^0.6.1",
     "zod": "^3.23.8"
@@ -37,5 +37,13 @@
   },
   "engines": {
     "node": ">=18.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiangYingC/typescript-migrator-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LiangYingC/typescript-migrator-mcp/issues"
+  },
+  "homepage": "https://github.com/LiangYingC/typescript-migrator-mcp#readme"
 }
