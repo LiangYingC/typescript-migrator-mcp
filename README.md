@@ -8,12 +8,10 @@ Add the following configuration to your MCP settings JSON:
 
 ```json
 {
-  "mcp": {
-    "servers": {
-      "typescript-migrator-mcp": {
-        "command": "npx",
-        "args": ["-y", "typescript-migrator-mcp"]
-      }
+  "mcpServers": {
+    "typescript-migrator-mcp": {
+      "command": "npx",
+      "args": ["-y", "typescript-migrator-mcp"]
     }
   }
 }
@@ -43,14 +41,12 @@ To add your own conversion rules, create a custom markdown file with your rules 
 
 ```json
 {
-  "mcp": {
-    "servers": {
-      "typescript-migrator-mcp": {
-        "command": "npx",
-        "args": ["-y", "typescript-migrator-mcp"],
-        "env": {
-          "CUSTOM_RULES_MD_FILE_PATH": "/path/to/your/custom-rules.md"
-        }
+  "mcpServers": {
+    "typescript-migrator-mcp": {
+      "command": "npx",
+      "args": ["-y", "typescript-migrator-mcp"],
+      "env": {
+        "CUSTOM_RULES_MD_FILE_PATH": "/path/to/your/custom-rules.md"
       }
     }
   }
